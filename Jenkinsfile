@@ -1,41 +1,29 @@
 pipeline {
-  agent any
-  stages {
-    stage('') {
-      steps {
-        sh '''
-pipeline {
     agent any
 
     stages {
-        stage(\'Checkout\') {
+        stage('Checkout') {
             steps {
-                echo \'Checking out project...\'
+                echo 'Checking out project...'
             }
         }
 
-        stage(\'Build\') {
+        stage('Build') {
             steps {
-                echo \'Building application...\'
+                echo 'Building application...'
             }
         }
 
-        stage(\'Test\') {
+        stage('Test') {
             steps {
-                echo \'Running tests...\'
+                echo 'Running tests...'
             }
         }
 
-        stage(\'Deploy\') {
+        stage('Deploy') {
             steps {
-                echo \'Deploying application...\'
+                echo 'Deploying application...'
             }
         }
     }
-}
-'''
-      }
-    }
-
-  }
 }
